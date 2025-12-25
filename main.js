@@ -19,13 +19,13 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(45);
 
 const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-const cubeTexture = new THREE.TextureLoader().load('sun.png');
+const cubeTexture = new THREE.TextureLoader().load('/sun.png');
 const cubeMaterial = new THREE.MeshBasicMaterial({ map: cubeTexture });
 const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 scene.add(cube);
 
 const donutGeometry = new THREE.TorusGeometry(10, 3, 16, 100);
-const donuttexture = new THREE.TextureLoader().load('earth.png');
+const donuttexture = new THREE.TextureLoader().load('/earth.png');
 const donutMaterial = new THREE.MeshBasicMaterial({ map: donuttexture });
 const donut = new THREE.Mesh(donutGeometry, donutMaterial);
 scene.add(donut);
